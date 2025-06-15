@@ -1,0 +1,91 @@
+/* Center container on page */
+.table-container {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 0 16px;
+  overflow-x: auto;
+}
+
+/* Base table styling */
+#score-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Header */
+#score-table thead {
+  background-color: #000000;
+  color: #fff;
+}
+#score-table th {
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 12px;
+}
+#score-table th:nth-child(2) {
+    text-align: left;
+}
+
+/* Body rows */
+#score-table tbody tr:nth-child(even) {
+  background-color: #f7f7f7;
+}
+#score-table td {
+  padding: 12px;
+  font-size: 0.95rem;
+  text-align: left;
+}
+
+/* Pos column */
+#score-table td:first-child,
+#score-table th:first-child {
+  width: 40px;
+  text-align: center;
+}
+
+/* Numeric columns */
+#score-table td:nth-child(3),
+#score-table td:nth-child(4),
+#score-table td:nth-child(5) {
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+
+
+
+
+
+@media (max-width: 600px) {
+  /* make the container scrollable if table is wider than screen */
+  .table-container {
+    padding: 0 8px;
+    overflow-x: auto;
+  }
+
+  /* shrink padding & font a bit for small screens */
+  #score-table th,
+  #score-table td {
+    padding: 8px;
+    font-size: 0.82rem;
+  }
+
+  /* re‑center Pos column on mobile too */
+  #score-table td:first-child,
+  #score-table th:first-child {
+    text-align: center;
+  }
+  
+  /* keep GP, RP, Ptos centered */
+  #score-table th:nth-child(3),
+  #score-table th:nth-child(4),
+  #score-table th:nth-child(5),
+  #score-table td:nth-child(3),
+  #score-table td:nth-child(4),
+  #score-table td:nth-child(5) {
+    text-align: center;
+  }
+}

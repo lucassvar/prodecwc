@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla</title>
+    <link rel="icon" type="image/x-icon" href="static/images/raven_logo.ico">
+
+    <link rel="stylesheet" href="static/css/main.css">
+    <link rel="stylesheet" href="static/css/sidebar.css">
+    <link rel="stylesheet" href="static/css/table.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Collapsible sidebar -->
+    <div class="sidebar" id="sidebar">
+        <div class="toggle-btn" id="toggle-btn">☰</div>
+        <nav class="menu">
+            <a href="home.html" class="menu-item">Home</a>
+            <a href="table.html" class="menu-item">Tabla</a>
+        </nav>
+    </div>
+
+    
+  <h1 style="text-align: center;">Tabla</h1>
+  <div class="table-container">
+    <table id="score-table">
+      <thead>
+        <tr>
+          <th>Pos</th>
+          <th>Usuario</th>
+          <th>GP</th>
+          <th>RP</th>
+          <th>Ptos</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- rows injected here -->
+      </tbody>
+    </table>
+  </div>
+
+  <br>
+  <br>
+
+  <h1 style="text-align: center;">Resultados</h1>
+  <h3 style="text-align: center;">Ronda 1</h3>
+
+  <script src="static/js/sidebar.js"></script>
+  <script src="static/js/table.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+﻿round,group,date,time,team1_name,team1_score,team2_name,team2_score,result,match_id
+1,A,14/06/2025,21:00,Al Ahly,0,Inter Miami,0,e,gs001
+1,A,15/06/2025,19:00,Palmeiras,,Porto,,,gs002
+1,B,15/06/2025,16:00,PSG,,Atl Madrid,,,gs003
+1,B,15/06/2025,23:00,Botafogo,,Seattle,,,gs004
+1,C,15/06/2025,13:00,Bayern,,Auckland City,,,gs005
+1,C,16/06/2025,19:00,Boca Jrs,,Benfica,,,gs006
+1,D,16/06/2025,16:00,Chelsea,,Los Angeles FC,,,gs007
+1,D,16/06/2025,22:00,Flamengo,,Espérance,,,gs008
+1,E,17/06/2025,16:00,River Plate,,Uruwa Reds,,,gs009
+1,E,17/06/2025,22:00,Monterrey,,Inter de Milan,,,gs010
+1,F,17/06/2025,13:00,Fluminense,,Dortmund,,,gs011
+1,F,17/06/2025,19:00,Ulsan,,Sundowns,,,gs012
+1,G,18/06/2025,13:00,Man City,,Wydad Casablanca,,,gs013
+1,G,18/06/2025,22:00,Al-Ain,,Juventus,,,gs014
+1,H,18/06/2025,16:00,Real Madrid,,Al-Hilal,,,gs015
+1,H,18/06/2025,19:00,Pachuca,,RB Salzburg,,,gs016
+2,A,19/06/2025,13:00,Palmeiras,,Al Ahly,,,gs017
+2,A,19/06/2025,16:00,Inter Miami,,Porto,,,gs018
+2,B,19/06/2025,19:00,Seattle,,Atl Madrid,,,gs019
+2,B,19/06/2025,22:00,PSG,,Botafogo,,,gs020
+2,C,20/06/2025,13:00,Benfica,,Auckland City,,,gs021
+2,C,20/06/2025,22:00,Bayern,,Boca Jrs,,,gs022
+2,D,20/06/2025,15:00,Flamengo,,Chelsea,,,gs023
+2,D,20/06/2025,19:00,Los Angeles,,Espérance,,,gs024
+2,E,21/06/2025,16:00,Inter de Milan,,Uruwa Reds,,,gs025
+2,E,21/06/2025,22:00,River Plate,,Monterrey,,,gs026
+2,F,21/06/2025,13:00,Sundowns,,Dortmund,,,gs027
+2,F,21/06/2025,19:00,Fluminense,,Ulsan,,,gs028
+2,G,22/06/2025,13:00,Juventus,,Wydad Casablanca,,,gs029
+2,G,22/06/2025,22:00,Man City,,Al-Ain,,,gs030
+2,H,22/06/2025,16:00,Real Madrid,,Pachuca,,,gs031
+2,H,22/06/2025,19:00,RB Salzburg,,Al-Hilal,,,gs032
+3,A,23/06/2025,22:00,Porto,,Al Ahly,,,gs033
+3,A,23/06/2025,22:00,Inter Miami,,Palmeiras,,,gs034
+3,B,23/06/2025,16:00,Atl Madrid,,Botafogo,,,gs035
+3,B,23/06/2025,16:00,Seattle,,PSG,,,gs036
+3,C,24/06/2025,16:00,Auckland City,,Boca Jrs,,,gs037
+3,C,24/06/2025,16:00,Benfica,,Bayern,,,gs038
+3,D,24/06/2025,22:00,Espérance,,Chelsea,,,gs039
+3,D,24/06/2025,22:00,Los Angeles,,Flamengo,,,gs040
+3,E,25/06/2025,22:00,Inter de Milan,,River Plate,,,gs041
+3,E,25/06/2025,22:00,Urawa Reds,,Monterrey,,,gs042
+3,F,25/06/2025,16:00,Dortmund,,Ulsan,,,gs043
+3,F,25/06/2025,16:00,Sundowns,,Fluminense,,,gs044
+3,G,26/06/2025,16:00,Juventus,,Man City,,,gs045
+3,G,26/06/2025,16:00,Wydad Casablanca,,Al-Ain,,,gs046
+3,H,26/06/2025,22:00,Al-Hilal,,Pachuca,,,gs047
+3,H,26/06/2025,22:00,RB Salzburg,,Real Madrid,,,gs048

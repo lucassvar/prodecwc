@@ -1,0 +1,77 @@
+/* Sidebar Styles */
+.sidebar {
+    background-color: #fff;
+    color: #131313;
+    width: 150px; /* Sidebar width */
+    max-width: 80%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -150px; /* Matches sidebar width */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: left 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.sidebar.open {
+    left: 0;
+}
+
+/* Toggle Button */
+.toggle-btn {
+    font-size: 18px;
+    color: #131313;
+    cursor: pointer;
+    padding: 7px;
+    position: fixed;
+    top: 15px;
+    left: 10px;
+    background: none;
+    border: none;
+    outline: none;
+    z-index: 1100; /* Ensure it stays on top of everything */
+    transition: transform 0.3s ease, left 0.3s ease;
+}
+
+.sidebar.open .toggle-btn {
+    left: 150px; /* Aligns with the new sidebar width */
+}
+
+
+/* Menu Items */
+.menu {
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.menu-item {
+    text-decoration: none;
+    color: #131313;
+    font-size: 15px;
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+    transition: color 0.3s ease; /* Smooth transition for color */
+}
+.menu-item:hover {
+    color: #0056b3; /* Hover color */
+}
+
+
+
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        left: -100%;
+    }
+    .sidebar.open .toggle-btn {
+        left: calc(100% - 50px); /* Ensure button stays at the right edge of the sidebar */
+    }
+    .content {
+        margin-left: 0;
+    }
+    .menu-item {
+        font-size: 20px;
+    }
+}

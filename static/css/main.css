@@ -1,0 +1,68 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    height: auto;
+    overflow-y: visible;
+    padding-left: 20px;
+}
+
+
+button {
+    border-radius: 10px;
+    padding: 6px 12px;
+}
+
+
+
+
+/* Input container */
+.input-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    padding-left: 20px;
+}
+
+
+
+/* Submit button*/
+.submit-button {
+    font-size: 0.8rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+.submit-button:active {
+    transform: scale(0.98);
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    body{
+        padding: 0px; /* Padding on the left of the page */
+    }
+
+    label[for="compareInput"] {
+        display: none;
+    }
+
+    .input-container {
+        width: 20px;
+        padding-left: 40px;
+    }
+}

@@ -1,0 +1,97 @@
+﻿user,round,group,date,time,team1_name,predicted_team1_score,team2_name,predicted_team2_score,predicted_result,match_id
+tb,1,A,14/06/2025,21:00,Al Ahly,2,Inter Miami,3,t2,gs001
+tb,1,A,15/06/2025,19:00,Palmeiras,1,Porto,1,e,gs002
+tb,1,B,15/06/2025,16:00,PSG,2,Atl Madrid,1,t1,gs003
+tb,1,B,15/06/2025,23:00,Botafogo,1,Seattle,0,t1,gs004
+tb,1,C,15/06/2025,13:00,Bayern,4,Auckland City,0,t1,gs005
+tb,1,C,16/06/2025,19:00,Boca Jrs,1,Benfica,2,t2,gs006
+tb,1,D,16/06/2025,16:00,Chelsea,2,Los Angeles FC,0,t1,gs007
+tb,1,D,16/06/2025,22:00,Flamengo,3,Espérance,0,t1,gs008
+tb,1,E,17/06/2025,16:00,River Plate,2,Uruwa Reds,0,t1,gs009
+tb,1,E,17/06/2025,22:00,Monterrey,0,Inter de Milan,2,t2,gs010
+tb,1,F,17/06/2025,13:00,Fluminense,1,Dortmund,2,t2,gs011
+tb,1,F,17/06/2025,19:00,Ulsan,2,Sundowns,2,e,gs012
+tb,1,G,18/06/2025,13:00,Man City,4,Wydad Casablanca,0,t1,gs013
+tb,1,G,18/06/2025,22:00,Al-Ain,0,Juventus,3,t2,gs014
+tb,1,H,18/06/2025,16:00,Real Madrid,3,Al-Hilal,1,t1,gs015
+tb,1,H,18/06/2025,19:00,Pachuca,1,RB Salzburg,2,t2,gs016
+tb,2,A,19/06/2025,13:00,Palmeiras,2,Al Ahly,0,t1,gs017
+tb,2,A,19/06/2025,16:00,Inter Miami,1,Porto,2,t2,gs018
+tb,2,B,19/06/2025,19:00,Seattle,0,Atl Madrid,2,t2,gs019
+tb,2,B,19/06/2025,22:00,PSG,2,Botafogo,0,t1,gs020
+tb,2,C,20/06/2025,13:00,Benfica,3,Auckland City,0,t1,gs021
+tb,2,C,20/06/2025,22:00,Bayern,3,Boca Jrs,0,t1,gs022
+tb,2,D,20/06/2025,15:00,Flamengo,1,Chelsea,3,t2,gs023
+tb,2,D,20/06/2025,19:00,Los Angeles,2,Espérance,0,t1,gs024
+tb,2,E,21/06/2025,16:00,Inter de Milan,1,Uruwa Reds,0,t1,gs025
+tb,2,E,21/06/2025,22:00,River Plate,2,Monterrey,1,t1,gs026
+tb,2,F,21/06/2025,13:00,Sundowns,0,Dortmund,3,t2,gs027
+tb,2,F,21/06/2025,19:00,Fluminense,2,Ulsan,0,t1,gs028
+tb,2,G,22/06/2025,13:00,Juventus,2,Wydad Casablanca,0,t1,gs029
+tb,2,G,22/06/2025,22:00,Man City,3,Al-Ain,0,t1,gs030
+tb,2,H,22/06/2025,16:00,Real Madrid,3,Pachuca,1,t1,gs031
+tb,2,H,22/06/2025,19:00,RB Salzburg,1,Al-Hilal,1,e,gs032
+tb,3,A,23/06/2025,22:00,Porto,2,Al Ahly,0,t1,gs033
+tb,3,A,23/06/2025,22:00,Inter Miami,1,Palmeiras,2,t2,gs034
+tb,3,B,23/06/2025,16:00,Atl Madrid,2,Botafogo,1,t1,gs035
+tb,3,B,23/06/2025,16:00,Seattle,0,PSG,3,t2,gs036
+tb,3,C,24/06/2025,16:00,Auckland City,0,Boca Jrs,0,e,gs037
+tb,3,C,24/06/2025,16:00,Benfica,1,Bayern,2,t2,gs038
+tb,3,D,24/06/2025,22:00,Espérance,0,Chelsea,4,t2,gs039
+tb,3,D,24/06/2025,22:00,Los Angeles,1,Flamengo,2,t2,gs040
+tb,3,E,25/06/2025,22:00,Inter de Milan,2,River Plate,1,t1,gs041
+tb,3,E,25/06/2025,22:00,Urawa Reds,1,Monterrey,1,e,gs042
+tb,3,F,25/06/2025,16:00,Dortmund,2,Ulsan,0,t1,gs043
+tb,3,F,25/06/2025,16:00,Sundowns,0,Fluminense,2,t2,gs044
+tb,3,G,26/06/2025,16:00,Juventus,2,Man City,3,t2,gs045
+tb,3,G,26/06/2025,16:00,Wydad Casablanca,0,Al-Ain,2,t2,gs046
+tb,3,H,26/06/2025,22:00,Al-Hilal,1,Pachuca,2,t2,gs047
+tb,3,H,26/06/2025,22:00,RB Salzburg,1,Real Madrid,3,t2,gs048
+lv,1,A,14/06/2025,21:00,Al Ahly,1,Inter Miami,2,t2,gs001
+lv,1,A,15/06/2025,19:00,Palmeiras,2,Porto,2,e,gs002
+lv,1,B,15/06/2025,16:00,PSG,2,Atl Madrid,1,t1,gs003
+lv,1,B,15/06/2025,23:00,Botafogo,2,Seattle,0,t1,gs004
+lv,1,C,15/06/2025,13:00,Bayern,3,Auckland City,0,t1,gs005
+lv,1,C,16/06/2025,19:00,Boca Jrs,1,Benfica,3,t2,gs006
+lv,1,D,16/06/2025,16:00,Chelsea,2,Los Angeles FC,1,t1,gs007
+lv,1,D,16/06/2025,22:00,Flamengo,3,Espérance,0,t1,gs008
+lv,1,E,17/06/2025,16:00,River Plate,4,Uruwa Reds,0,t1,gs009
+lv,1,E,17/06/2025,22:00,Monterrey,0,Inter de Milan,2,t2,gs010
+lv,1,F,17/06/2025,13:00,Fluminense,1,Dortmund,2,t2,gs011
+lv,1,F,17/06/2025,19:00,Ulsan,2,Sundowns,3,t2,gs012
+lv,1,G,18/06/2025,13:00,Man City,5,Wydad Casablanca,0,t1,gs013
+lv,1,G,18/06/2025,22:00,Al-Ain,1,Juventus,4,t2,gs014
+lv,1,H,18/06/2025,16:00,Real Madrid,4,Al-Hilal,0,t1,gs015
+lv,1,H,18/06/2025,19:00,Pachuca,2,RB Salzburg,3,t2,gs016
+lv,2,A,19/06/2025,13:00,Palmeiras,3,Al Ahly,1,t1,gs017
+lv,2,A,19/06/2025,16:00,Inter Miami,1,Porto,3,t2,gs018
+lv,2,B,19/06/2025,19:00,Seattle,0,Atl Madrid,2,t2,gs019
+lv,2,B,19/06/2025,22:00,PSG,4,Botafogo,1,t1,gs020
+lv,2,C,20/06/2025,13:00,Benfica,2,Auckland City,0,t1,gs021
+lv,2,C,20/06/2025,22:00,Bayern,4,Boca Jrs,2,t1,gs022
+lv,2,D,20/06/2025,15:00,Flamengo,1,Chelsea,2,t2,gs023
+lv,2,D,20/06/2025,19:00,Los Angeles,2,Espérance,0,t1,gs024
+lv,2,E,21/06/2025,16:00,Inter de Milan,3,Uruwa Reds,1,t1,gs025
+lv,2,E,21/06/2025,22:00,River Plate,3,Monterrey,1,t1,gs026
+lv,2,F,21/06/2025,13:00,Sundowns,0,Dortmund,3,t2,gs027
+lv,2,F,21/06/2025,19:00,Fluminense,2,Ulsan,0,t1,gs028
+lv,2,G,22/06/2025,13:00,Juventus,2,Wydad Casablanca,0,t1,gs029
+lv,2,G,22/06/2025,22:00,Man City,4,Al-Ain,1,t1,gs030
+lv,2,H,22/06/2025,16:00,Real Madrid,3,Pachuca,0,t1,gs031
+lv,2,H,22/06/2025,19:00,RB Salzburg,3,Al-Hilal,1,t1,gs032
+lv,3,A,23/06/2025,22:00,Porto,4,Al Ahly,2,t1,gs033
+lv,3,A,23/06/2025,22:00,Inter Miami,1,Palmeiras,3,t2,gs034
+lv,3,B,23/06/2025,16:00,Atl Madrid,1,Botafogo,1,e,gs035
+lv,3,B,23/06/2025,16:00,Seattle,0,PSG,3,t2,gs036
+lv,3,C,24/06/2025,16:00,Auckland City,2,Boca Jrs,2,e,gs037
+lv,3,C,24/06/2025,16:00,Benfica,1,Bayern,3,t2,gs038
+lv,3,D,24/06/2025,22:00,Espérance,1,Chelsea,3,t2,gs039
+lv,3,D,24/06/2025,22:00,Los Angeles,1,Flamengo,1,e,gs040
+lv,3,E,25/06/2025,22:00,Inter de Milan,2,River Plate,2,e,gs041
+lv,3,E,25/06/2025,22:00,Urawa Reds,0,Monterrey,1,t2,gs042
+lv,3,F,25/06/2025,16:00,Dortmund,2,Ulsan,1,t1,gs043
+lv,3,F,25/06/2025,16:00,Sundowns,0,Fluminense,2,t2,gs044
+lv,3,G,26/06/2025,16:00,Juventus,1,Man City,1,e,gs045
+lv,3,G,26/06/2025,16:00,Wydad Casablanca,2,Al-Ain,3,t2,gs046
+lv,3,H,26/06/2025,22:00,Al-Hilal,1,Pachuca,2,t2,gs047
+lv,3,H,26/06/2025,22:00,RB Salzburg,0,Real Madrid,4,t2,gs048
