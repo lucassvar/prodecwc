@@ -54,6 +54,7 @@ async function loadAndScoreData() {
     });
 
     renderTable(scoring_data); // <-- render once ready
+    populateScoreTables(scoring_data);
   } catch (err) {
     console.error("Failed to load or process data:", err);
   }
@@ -91,6 +92,71 @@ function renderTable(data) {
     tbody.appendChild(tr);
   });
 }
+
+
+function populateScoreTables() {
+  // 1. Get all unique match_ids in the data
+  const matchIds = [...new Set(scoring_data.map(item => item.match_id))];
+
+  matchIds.forEach(matchId => {
+    // 2. Find the table for this match_id
+    const table = document.getElementById(`rb-${matchId}`);
+    if (!table) return;  // skip if table not present
+
+    // 3. Pull any one entry to get date/time and team names
+    const anyEntry = scoring_data.find(item => item.match_id === matchId);
+    if (!anyEntry) return;
+
+    // 4. Fill date + time
+    const dtCell = table.querySelector('#match_date_time');
+    if (dtCell) {
+      dtCell.innerText = `${anyEntry.date}\n${anyEntry.time}`;
+    }
+
+    // 5. Fill team names
+    const t1NameCell = table.querySelector('#t1_name');
+    const t2NameCell = table.querySelector('#t2_name');
+    if (t1NameCell) t1NameCell.innerText = anyEntry.team1_name;
+    if (t2NameCell) t2NameCell.innerText = anyEntry.team2_name;
+
+    // 6. Fill actual scores (use "-" if null)
+    const res1Cell = table.querySelector('#res1');
+    const res2Cell = table.querySelector('#res2');
+    if (res1Cell) {
+      res1Cell.innerText = anyEntry.team1_score != null 
+        ? anyEntry.team1_score 
+        : '-';
+    }
+    if (res2Cell) {
+      res2Cell.innerText = anyEntry.team2_score != null 
+        ? anyEntry.team2_score 
+        : '-';
+    }
+
+    // 7. Helper to fill a user’s prediction and points
+    function fillUser(userKey, prefix) {
+      const userEntry = scoring_data.find(item =>
+        item.match_id === matchId && item.user === userKey
+      );
+      if (!userEntry) return;
+
+      const p1 = table.querySelector(`#${prefix}1`);
+      const p2 = table.querySelector(`#${prefix}2`);
+      const pts = table.querySelector(`#${prefix}_pt`);
+
+      if (p1)  p1.innerText  = userEntry.predicted_team1_score;
+      if (p2)  p2.innerText  = userEntry.predicted_team2_score;
+      if (pts) pts.innerText = userEntry.goal_points + userEntry.result_points;
+    }
+
+    // 8. Fill Tomas (“tb”) and Lucas (“lv”)
+    fillUser('tb', 'tb');
+    fillUser('lv', 'lv');
+  });
+}
+
+
+
 
 // Automatically trigger on load
 document.addEventListener('DOMContentLoaded', loadAndScoreData);

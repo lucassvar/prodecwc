@@ -1,0 +1,142 @@
+.wrapper {
+  display: flex;
+  align-items: center; /* Vertical centering */
+  justify-content: center; /* Horizontal centering (optional) */
+  padding-bottom: 50px;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  align-items: center; /* Aligns items vertically in the center */
+  gap: 20px; /* Space between the table boxes and the "Grupo A" text */
+}
+
+.group-box {
+  background-color: #fff;
+  padding: 10px;
+}
+
+.result-box {
+  border-collapse: collapse;
+}
+
+.result-box tr {
+  height: 25px;
+}
+
+.result-box th,
+td {
+  border: 1px solid #cecece;
+  padding: 8px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* EMPTY headers */
+.result-box thead th:nth-child(1) {
+  /* First empty header */
+  border: none;
+  width: 60px;
+}
+.result-box thead th:nth-child(2) {
+  /* Second empty header */
+  border: none;
+  width: 150px;
+}
+.result-box thead th:nth-child(3) {
+  /* Second empty header */
+  border: none;
+  width: 20px;
+}
+
+/* TB and LV headers */
+.result-box thead th:nth-child(4) {
+  /* TB header */
+  background-color: #3f51b5;
+  color: white;
+  width: 20px;
+}
+
+.result-box thead th:nth-child(5) {
+  /* LV header */
+  background-color: #d32f2f;
+  color: white;
+  width: 20px;
+}
+
+/* Specific styling for the tb.pt and lv.pt cells */
+.tb-pt {
+  background-color: #9cb5e4;
+  color: #333;
+}
+
+.lv-pt {
+  background-color: #ef9a9a;
+  color: #333;
+}
+
+/* Style for the team_name cells */
+.team-name {
+  text-align: left; /* Align team names to the left */
+}
+
+/* Group label styling */
+.group-label {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+  margin: 0 20px; /* Adjust margin to control spacing */
+}
+
+/* Remove borders from the empty cell in the footer */
+.result-box tfoot td:first-child {
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+}
+.result-box tfoot td:nth-child(2) {
+  border-left: none;
+  border-bottom: none;
+  border-right: none;
+}
+.result-box tfoot td:nth-child(3) {
+  border-left: none;
+  border-bottom: none;
+  border-right: none;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+  display: flex;
+  align-items: center; /* Vertical centering */
+    padding-bottom: 40px;
+    box-sizing: border-box; /* Include padding in element's total width/height */
+}
+
+  .container {
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px; /* Maintain gap between stacked boxes */
+    width: 100%; /* Allow container to take full width */
+  }
+
+  .group-label {
+    display: none; /* Hide the group-label on mobile */
+  }
+
+  .result-box th,
+  td {
+    font-size: 10px;
+  }
+
+  .group-box {
+    width: 100%; /* Make group boxes take full width on mobile */
+    max-width: 300px; /* Keep the original max width if content is smaller */
+    /* To left-align the box itself within the container when it's stacked */
+    margin: 0; /* Reset any default margins */
+  }
+
+  .result-box {
+    width: 100%; /* Make table fill its parent group-box */
+  }
+}

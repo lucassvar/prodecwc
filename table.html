@@ -1,55 +1,724 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tabla</title>
-    <link rel="icon" type="image/x-icon" href="static/images/raven_logo.ico">
+    <link rel="icon" type="image/x-icon" href="static/images/raven_logo.ico" />
 
-    <link rel="stylesheet" href="static/css/main.css">
-    <link rel="stylesheet" href="static/css/sidebar.css">
-    <link rel="stylesheet" href="static/css/table.css">
+    <link rel="stylesheet" href="static/css/main.css" />
+    <link rel="stylesheet" href="static/css/sidebar.css" />
+    <link rel="stylesheet" href="static/css/table.css" />
+    <link rel="stylesheet" href="static/css/result_boxes.css" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <!-- Collapsible sidebar -->
     <div class="sidebar" id="sidebar">
-        <div class="toggle-btn" id="toggle-btn">☰</div>
-        <nav class="menu">
-            <a href="home.html" class="menu-item">Home</a>
-            <a href="table.html" class="menu-item">Tabla</a>
-        </nav>
+      <div class="toggle-btn" id="toggle-btn">☰</div>
+      <nav class="menu">
+        <a href="home.html" class="menu-item">Home</a>
+        <a href="table.html" class="menu-item">Tabla</a>
+      </nav>
+    </div>
+
+    <h1 style="text-align: center" class="page-title">Tabla</h1>
+    <div class="table-container">
+      <table id="score-table">
+        <thead>
+          <tr>
+            <th>Pos</th>
+            <th>Usuario</th>
+            <th>GP</th>
+            <th>RP</th>
+            <th>Ptos</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- rows injected here -->
+        </tbody>
+      </table>
+    </div>
+
+    <br />
+    <br />
+
+    <h1 style="text-align: center">Resultados</h1>
+
+    <h3 style="text-align: center">Ronda 1</h3>
+
+    <!-- ROW 1 -->
+    <div class="wrapper ROW1">
+      <div class="container">
+        <div class="group-box">
+          <table class="result-box" id="rb-gs001">
+            <thead>
+              <tr>
+                <th colspan="1" class="match_date_time"></th>
+                <th colspan="1" class="team-name"></th>
+                <th colspan="1" class="value"></th>
+                <th colspan="1" class="value">TB</th>
+                <th colspan="1" class="value">LV</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td id="match_date_time" rowspan="2"></td>
+                <td id="t1_name" class="team-name"></td>
+                <td id="res1"></td>
+                <td id="tb1"></td>
+                <td id="lv1"></td>
+              </tr>
+              <tr>
+                <td id="t2_name" class="team-name"></td>
+                <td id="res2"></td>
+                <td id="tb2"></td>
+                <td id="lv2"></td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td id="tb_pt" class="tb-pt"></td>
+                <td id="lv_pt" class="lv-pt"></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+
+        <p class="group-label">Grupo A</p>
+
+        <div class="group-box">
+          <table class="result-box" id="rb-gs002">
+            <thead>
+              <tr>
+                <th colspan="1" class="match_date_time"></th>
+                <th colspan="1" class="team-name"></th>
+                <th colspan="1" class="value"></th>
+                <th colspan="1" class="value">TB</th>
+                <th colspan="1" class="value">LV</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td id="match_date_time" rowspan="2"></td>
+                <td id="t1_name" class="team-name"></td>
+                <td id="res1"></td>
+                <td id="tb1"></td>
+                <td id="lv1"></td>
+              </tr>
+              <tr>
+                <td id="t2_name" class="team-name"></td>
+                <td id="res2"></td>
+                <td id="tb2"></td>
+                <td id="lv2"></td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td id="tb_pt" class="tb-pt"></td>
+                <td id="lv_pt" class="lv-pt"></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
     </div>
 
     
-  <h1 style="text-align: center;">Tabla</h1>
-  <div class="table-container">
-    <table id="score-table">
-      <thead>
-        <tr>
-          <th>Pos</th>
-          <th>Usuario</th>
-          <th>GP</th>
-          <th>RP</th>
-          <th>Ptos</th>
-        </tr>
-      </thead>
-      <tbody>
-        <!-- rows injected here -->
-      </tbody>
-    </table>
-  </div>
+    <!-- ROW 2 -->
+    <div class="wrapper ROW1">
+      <div class="container">
+        <div class="group-box">
+          <table class="result-box" id="rb-gs003">
+            <thead>
+              <tr>
+                <th colspan="1" class="match_date_time"></th>
+                <th colspan="1" class="team-name"></th>
+                <th colspan="1" class="value"></th>
+                <th colspan="1" class="value">TB</th>
+                <th colspan="1" class="value">LV</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td id="match_date_time" rowspan="2"></td>
+                <td id="t1_name" class="team-name"></td>
+                <td id="res1"></td>
+                <td id="tb1"></td>
+                <td id="lv1"></td>
+              </tr>
+              <tr>
+                <td id="t2_name" class="team-name"></td>
+                <td id="res2"></td>
+                <td id="tb2"></td>
+                <td id="lv2"></td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td id="tb_pt" class="tb-pt"></td>
+                <td id="lv_pt" class="lv-pt"></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
 
-  <br>
-  <br>
+        <p class="group-label">Grupo B</p>
 
-  <h1 style="text-align: center;">Resultados</h1>
-  <h3 style="text-align: center;">Ronda 1</h3>
+        <div class="group-box">
+          <table class="result-box" id="rb-gs004">
+            <thead>
+              <tr>
+                <th colspan="1" class="match_date_time"></th>
+                <th colspan="1" class="team-name"></th>
+                <th colspan="1" class="value"></th>
+                <th colspan="1" class="value">TB</th>
+                <th colspan="1" class="value">LV</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td id="match_date_time" rowspan="2"></td>
+                <td id="t1_name" class="team-name"></td>
+                <td id="res1"></td>
+                <td id="tb1"></td>
+                <td id="lv1"></td>
+              </tr>
+              <tr>
+                <td id="t2_name" class="team-name"></td>
+                <td id="res2"></td>
+                <td id="tb2"></td>
+                <td id="lv2"></td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td id="tb_pt" class="tb-pt"></td>
+                <td id="lv_pt" class="lv-pt"></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </div>
 
+    <!-- ROW 3 -->
+    <div class="wrapper ROW1">
+      <div class="container">
+        <div class="group-box">
+          <table class="result-box" id="rb-gs005">
+            <thead>
+              <tr>
+                <th colspan="1" class="match_date_time"></th>
+                <th colspan="1" class="team-name"></th>
+                <th colspan="1" class="value"></th>
+                <th colspan="1" class="value">TB</th>
+                <th colspan="1" class="value">LV</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td id="match_date_time" rowspan="2"></td>
+                <td id="t1_name" class="team-name"></td>
+                <td id="res1"></td>
+                <td id="tb1"></td>
+                <td id="lv1"></td>
+              </tr>
+              <tr>
+                <td id="t2_name" class="team-name"></td>
+                <td id="res2"></td>
+                <td id="tb2"></td>
+                <td id="lv2"></td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td id="tb_pt" class="tb-pt"></td>
+                <td id="lv_pt" class="lv-pt"></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
-  <script src="static/js/sidebar.js"></script>
-  <script src="static/js/table.js"></script>
-</body>
+        <p class="group-label">Grupo C</p>
+
+        <div class="group-box">
+          <table class="result-box" id="rb-gs006">
+            <thead>
+              <tr>
+                <th colspan="1" class="match_date_time"></th>
+                <th colspan="1" class="team-name"></th>
+                <th colspan="1" class="value"></th>
+                <th colspan="1" class="value">TB</th>
+                <th colspan="1" class="value">LV</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td id="match_date_time" rowspan="2"></td>
+                <td id="t1_name" class="team-name"></td>
+                <td id="res1"></td>
+                <td id="tb1"></td>
+                <td id="lv1"></td>
+              </tr>
+              <tr>
+                <td id="t2_name" class="team-name"></td>
+                <td id="res2"></td>
+                <td id="tb2"></td>
+                <td id="lv2"></td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td id="tb_pt" class="tb-pt"></td>
+                <td id="lv_pt" class="lv-pt"></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- ROW 4 -->
+    <div class="wrapper ROW1">
+      <div class="container">
+        <div class="group-box">
+          <table class="result-box" id="rb-gs007">
+            <thead>
+              <tr>
+                <th colspan="1" class="match_date_time"></th>
+                <th colspan="1" class="team-name"></th>
+                <th colspan="1" class="value"></th>
+                <th colspan="1" class="value">TB</th>
+                <th colspan="1" class="value">LV</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td id="match_date_time" rowspan="2"></td>
+                <td id="t1_name" class="team-name"></td>
+                <td id="res1"></td>
+                <td id="tb1"></td>
+                <td id="lv1"></td>
+              </tr>
+              <tr>
+                <td id="t2_name" class="team-name"></td>
+                <td id="res2"></td>
+                <td id="tb2"></td>
+                <td id="lv2"></td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td id="tb_pt" class="tb-pt"></td>
+                <td id="lv_pt" class="lv-pt"></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+
+        <p class="group-label">Grupo D</p>
+
+        <div class="group-box">
+          <table class="result-box" id="rb-gs008">
+            <thead>
+              <tr>
+                <th colspan="1" class="match_date_time"></th>
+                <th colspan="1" class="team-name"></th>
+                <th colspan="1" class="value"></th>
+                <th colspan="1" class="value">TB</th>
+                <th colspan="1" class="value">LV</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td id="match_date_time" rowspan="2"></td>
+                <td id="t1_name" class="team-name"></td>
+                <td id="res1"></td>
+                <td id="tb1"></td>
+                <td id="lv1"></td>
+              </tr>
+              <tr>
+                <td id="t2_name" class="team-name"></td>
+                <td id="res2"></td>
+                <td id="tb2"></td>
+                <td id="lv2"></td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td id="tb_pt" class="tb-pt"></td>
+                <td id="lv_pt" class="lv-pt"></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- ROW 5 -->
+    <div class="wrapper ROW1">
+      <div class="container">
+        <div class="group-box">
+          <table class="result-box" id="rb-gs009">
+            <thead>
+              <tr>
+                <th colspan="1" class="match_date_time"></th>
+                <th colspan="1" class="team-name"></th>
+                <th colspan="1" class="value"></th>
+                <th colspan="1" class="value">TB</th>
+                <th colspan="1" class="value">LV</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td id="match_date_time" rowspan="2"></td>
+                <td id="t1_name" class="team-name"></td>
+                <td id="res1"></td>
+                <td id="tb1"></td>
+                <td id="lv1"></td>
+              </tr>
+              <tr>
+                <td id="t2_name" class="team-name"></td>
+                <td id="res2"></td>
+                <td id="tb2"></td>
+                <td id="lv2"></td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td id="tb_pt" class="tb-pt"></td>
+                <td id="lv_pt" class="lv-pt"></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+
+        <p class="group-label">Grupo E</p>
+
+        <div class="group-box">
+          <table class="result-box" id="rb-gs0010">
+            <thead>
+              <tr>
+                <th colspan="1" class="match_date_time"></th>
+                <th colspan="1" class="team-name"></th>
+                <th colspan="1" class="value"></th>
+                <th colspan="1" class="value">TB</th>
+                <th colspan="1" class="value">LV</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td id="match_date_time" rowspan="2"></td>
+                <td id="t1_name" class="team-name"></td>
+                <td id="res1"></td>
+                <td id="tb1"></td>
+                <td id="lv1"></td>
+              </tr>
+              <tr>
+                <td id="t2_name" class="team-name"></td>
+                <td id="res2"></td>
+                <td id="tb2"></td>
+                <td id="lv2"></td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td id="tb_pt" class="tb-pt"></td>
+                <td id="lv_pt" class="lv-pt"></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- ROW 6 -->
+    <div class="wrapper ROW1">
+      <div class="container">
+        <div class="group-box">
+          <table class="result-box" id="rb-gs0011">
+            <thead>
+              <tr>
+                <th colspan="1" class="match_date_time"></th>
+                <th colspan="1" class="team-name"></th>
+                <th colspan="1" class="value"></th>
+                <th colspan="1" class="value">TB</th>
+                <th colspan="1" class="value">LV</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td id="match_date_time" rowspan="2"></td>
+                <td id="t1_name" class="team-name"></td>
+                <td id="res1"></td>
+                <td id="tb1"></td>
+                <td id="lv1"></td>
+              </tr>
+              <tr>
+                <td id="t2_name" class="team-name"></td>
+                <td id="res2"></td>
+                <td id="tb2"></td>
+                <td id="lv2"></td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td id="tb_pt" class="tb-pt"></td>
+                <td id="lv_pt" class="lv-pt"></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+
+        <p class="group-label">Grupo F</p>
+
+        <div class="group-box">
+          <table class="result-box" id="rb-gs0012">
+            <thead>
+              <tr>
+                <th colspan="1" class="match_date_time"></th>
+                <th colspan="1" class="team-name"></th>
+                <th colspan="1" class="value"></th>
+                <th colspan="1" class="value">TB</th>
+                <th colspan="1" class="value">LV</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td id="match_date_time" rowspan="2"></td>
+                <td id="t1_name" class="team-name"></td>
+                <td id="res1"></td>
+                <td id="tb1"></td>
+                <td id="lv1"></td>
+              </tr>
+              <tr>
+                <td id="t2_name" class="team-name"></td>
+                <td id="res2"></td>
+                <td id="tb2"></td>
+                <td id="lv2"></td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td id="tb_pt" class="tb-pt"></td>
+                <td id="lv_pt" class="lv-pt"></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- ROW 7 -->
+    <div class="wrapper ROW1">
+      <div class="container">
+        <div class="group-box">
+          <table class="result-box" id="rb-gs0013">
+            <thead>
+              <tr>
+                <th colspan="1" class="match_date_time"></th>
+                <th colspan="1" class="team-name"></th>
+                <th colspan="1" class="value"></th>
+                <th colspan="1" class="value">TB</th>
+                <th colspan="1" class="value">LV</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td id="match_date_time" rowspan="2"></td>
+                <td id="t1_name" class="team-name"></td>
+                <td id="res1"></td>
+                <td id="tb1"></td>
+                <td id="lv1"></td>
+              </tr>
+              <tr>
+                <td id="t2_name" class="team-name"></td>
+                <td id="res2"></td>
+                <td id="tb2"></td>
+                <td id="lv2"></td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td id="tb_pt" class="tb-pt"></td>
+                <td id="lv_pt" class="lv-pt"></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+
+        <p class="group-label">Grupo G</p>
+
+        <div class="group-box">
+          <table class="result-box" id="rb-gs0014">
+            <thead>
+              <tr>
+                <th colspan="1" class="match_date_time"></th>
+                <th colspan="1" class="team-name"></th>
+                <th colspan="1" class="value"></th>
+                <th colspan="1" class="value">TB</th>
+                <th colspan="1" class="value">LV</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td id="match_date_time" rowspan="2"></td>
+                <td id="t1_name" class="team-name"></td>
+                <td id="res1"></td>
+                <td id="tb1"></td>
+                <td id="lv1"></td>
+              </tr>
+              <tr>
+                <td id="t2_name" class="team-name"></td>
+                <td id="res2"></td>
+                <td id="tb2"></td>
+                <td id="lv2"></td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td id="tb_pt" class="tb-pt"></td>
+                <td id="lv_pt" class="lv-pt"></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- ROW 8 -->
+    <div class="wrapper ROW1">
+      <div class="container">
+        <div class="group-box">
+          <table class="result-box" id="rb-gs0015">
+            <thead>
+              <tr>
+                <th colspan="1" class="match_date_time"></th>
+                <th colspan="1" class="team-name"></th>
+                <th colspan="1" class="value"></th>
+                <th colspan="1" class="value">TB</th>
+                <th colspan="1" class="value">LV</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td id="match_date_time" rowspan="2"></td>
+                <td id="t1_name" class="team-name"></td>
+                <td id="res1"></td>
+                <td id="tb1"></td>
+                <td id="lv1"></td>
+              </tr>
+              <tr>
+                <td id="t2_name" class="team-name"></td>
+                <td id="res2"></td>
+                <td id="tb2"></td>
+                <td id="lv2"></td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td id="tb_pt" class="tb-pt"></td>
+                <td id="lv_pt" class="lv-pt"></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+
+        <p class="group-label">Grupo H</p>
+
+        <div class="group-box">
+          <table class="result-box" id="rb-gs0016">
+            <thead>
+              <tr>
+                <th colspan="1" class="match_date_time"></th>
+                <th colspan="1" class="team-name"></th>
+                <th colspan="1" class="value"></th>
+                <th colspan="1" class="value">TB</th>
+                <th colspan="1" class="value">LV</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td id="match_date_time" rowspan="2"></td>
+                <td id="t1_name" class="team-name"></td>
+                <td id="res1"></td>
+                <td id="tb1"></td>
+                <td id="lv1"></td>
+              </tr>
+              <tr>
+                <td id="t2_name" class="team-name"></td>
+                <td id="res2"></td>
+                <td id="tb2"></td>
+                <td id="lv2"></td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td id="tb_pt" class="tb-pt"></td>
+                <td id="lv_pt" class="lv-pt"></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+    <script src="static/js/sidebar.js"></script>
+    <script src="static/js/table.js"></script>
+    <script src="static/js/result_boxes.js"></script>
+  </body>
 </html>
