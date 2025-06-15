@@ -53,8 +53,6 @@ async function loadAndScoreData() {
       };
     });
 
-    renderTable(scoring_data); // <-- render once ready
-    populateScoreTables(scoring_data);
   } catch (err) {
     console.error("Failed to load or process data:", err);
   }
@@ -159,4 +157,27 @@ function populateScoreTables() {
 
 
 // Automatically trigger on load
-document.addEventListener('DOMContentLoaded', loadAndScoreData);
+document.addEventListener('DOMContentLoaded', () => {
+    loadAndScoreData().then(() => {
+        renderTable(scoring_data);
+        populateScoreTables();
+    });
+});
+
+// Ensure everything executes again on page reload
+window.addEventListener('beforeunload', () => {
+    sessionStorage.setItem('reload', true); // Store reload flag in session storage
+});
+
+window.addEventListener('load', () => {
+    if (sessionStorage.getItem('reload')) {
+        // Clear reload flag
+        sessionStorage.removeItem('reload');
+        
+        // Execute the sequence again on page reload
+        loadAndScoreData().then(() => {
+            renderTable(scoring_data);
+            populateScoreTables();
+        });
+    }
+});
