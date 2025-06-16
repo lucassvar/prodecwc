@@ -6,10 +6,17 @@
 }
 
 .container {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   align-items: center;
   display: flex;
   align-items: center; /* Aligns items vertically in the center */
   gap: 20px; /* Space between the table boxes and the "Grupo A" text */
+  font-family: "Segoe UI", Roboto, sans-serif;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
 .group-box {
@@ -27,7 +34,7 @@
 
 .result-box th,
 td {
-  border: 1px solid #cecece;
+  border: 1px solid #ffffff;
   padding: 8px;
   text-align: center;
   font-size: 14px;
@@ -56,6 +63,7 @@ td {
   background-color: #3f51b5;
   color: white;
   width: 20px;
+  font-weight: 450;
 }
 
 .result-box thead th:nth-child(5) {
@@ -63,6 +71,7 @@ td {
   background-color: #d32f2f;
   color: white;
   width: 20px;
+  font-weight: 450;
 }
 
 /* Specific styling for the tb.pt and lv.pt cells */
@@ -106,22 +115,32 @@ td {
   border-right: none;
 }
 
+/* Specific background colors for each cell */
+#t1_name,
+#res1,
+#tb1,
+#lv1 {
+  background-color: #d6d6d6;
+}
+
+#match-date-time {
+  background-color: #292929;
+  color: rgb(214, 214, 214);
+  line-height: 1.5;
+}
+
 @media (max-width: 768px) {
   .wrapper {
-  display: flex;
-  align-items: center; /* Vertical centering */
+    display: flex;
+    align-items: center; /* Vertical centering */
     padding-bottom: 40px;
     box-sizing: border-box; /* Include padding in element's total width/height */
-}
+  }
 
   .container {
     flex-direction: column; /* Stack items vertically */
     gap: 20px; /* Maintain gap between stacked boxes */
     width: 100%; /* Allow container to take full width */
-  }
-
-  .group-label {
-    display: none; /* Hide the group-label on mobile */
   }
 
   .result-box th,

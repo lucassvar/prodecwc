@@ -10,8 +10,8 @@
 #score-table {
   width: 100%;
   border-collapse: collapse;
-  font-family: 'Segoe UI', Roboto, sans-serif;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  font-family: "Segoe UI", Roboto, sans-serif;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   overflow: hidden;
 }
@@ -27,7 +27,7 @@
   padding: 12px;
 }
 #score-table th:nth-child(2) {
-    text-align: left;
+  text-align: left;
 }
 
 /* Body rows */
@@ -55,7 +55,6 @@
   font-variant-numeric: tabular-nums;
 }
 
-
 #score-table th:nth-child(3),
 #score-table td:nth-child(3) {
   width: 40px; /* Adjust as needed */
@@ -70,10 +69,6 @@
 #score-table td:nth-child(5) {
   width: 40px; /* Adjust as needed */
 }
-
-
-
-
 
 @media (max-width: 600px) {
   .page-title {
@@ -99,25 +94,31 @@
     padding: 4px; /* Reduce padding for smaller screens */
   }
 
-
   #score-table th:nth-child(2),
-#score-table td:nth-child(2) {
-  width: 50px; /* Adjust as needed */
-}
+  #score-table td:nth-child(2) {
+    width: 50px; /* Adjust as needed */
+  }
 
-#score-table th:nth-child(3),
-#score-table td:nth-child(3) {
-  width: 30px; /* Adjust as needed */
-}
+  #score-table th:nth-child(3),
+  #score-table td:nth-child(3) {
+    width: 30px; /* Adjust as needed */
+  }
 
-#score-table th:nth-child(4),
-#score-table td:nth-child(4) {
-  width: 30px; /* Adjust as needed */
-}
+  #score-table th:nth-child(4),
+  #score-table td:nth-child(4) {
+    width: 30px; /* Adjust as needed */
+  }
 
-#score-table th:nth-child(5),
-#score-table td:nth-child(5) {
-  width: 30px; /* Adjust as needed */
-}
+  #score-table th:nth-child(5),
+  #score-table td:nth-child(5) {
+    width: 30px; /* Adjust as needed */
+  }
 
+  #score-table th:nth-child(2) {
+    text-align: center;
+  }
+
+  #score-table td {
+    text-align: center;
+  }
 }

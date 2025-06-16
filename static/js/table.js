@@ -106,7 +106,7 @@ function populateScoreTables() {
     if (!anyEntry) return;
 
     // 4. Fill date + time
-    const dtCell = table.querySelector('#match_date_time');
+    const dtCell = table.querySelector('#match-date-time');
     if (dtCell) {
       dtCell.innerText = `${anyEntry.date}\n${anyEntry.time}`;
     }
