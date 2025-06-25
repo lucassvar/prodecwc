@@ -17,6 +17,30 @@
     />
   </head>
   <body>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+  const select = document.getElementById('stage-select');
+  const stages = document.querySelectorAll('.stage');
+
+  function showSelected() {
+    const elegido = select.value;
+    stages.forEach(div => {
+      div.style.display = (div.id === elegido) ? 'block' : 'none';
+    });
+  }
+
+  // inicial
+  showSelected();
+
+  // escuchamos ambos eventos
+  select.addEventListener('change', showSelected);
+  select.addEventListener('input', showSelected);
+});
+    </script>
+
+
+
+
     <!-- Collapsible sidebar -->
     <div class="sidebar" id="sidebar">
       <div class="toggle-btn" id="toggle-btn">☰</div>
