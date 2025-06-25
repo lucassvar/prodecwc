@@ -155,6 +155,25 @@ function populateScoreTables() {
 
 
 
+function hideshowresults() {
+  const select = document.getElementById('stage-select');
+  const stages = document.querySelectorAll('.stage');
+
+  function showSelected() {
+    const elegido = select.value;
+    stages.forEach(div => {
+      div.style.display = (div.id === elegido) ? 'block' : 'none';
+    });
+  }
+
+  // 1) Inicializar mostrando el valor por defecto
+  showSelected();
+
+  // 2) Cada vez que cambie la selección
+  select.addEventListener('change', showSelected);
+}
+
+
 
 // Automatically trigger on load
 document.addEventListener('DOMContentLoaded', () => {
@@ -162,6 +181,8 @@ document.addEventListener('DOMContentLoaded', () => {
         renderTable(scoring_data);
         populateScoreTables();
     });
+
+    hideshowresults();
 });
 
 // Ensure everything executes again on page reload

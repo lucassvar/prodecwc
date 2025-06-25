@@ -49,7 +49,21 @@
 
 
     <h1 style="text-align: center">Resultados</h1>
-    <h3 style="text-align: center">Ronda 1</h3>
+    <div class="stage-select-wrapper">
+<select id="stage-select" class="stage-select">
+  <option value="ronda-1">Ronda 1</option>
+  <option value="ronda-2">Ronda 2</option>
+  <option value="ronda-3" selected>Ronda 3</option>
+  <option value="octavos-de-final">8vos de Final</option>
+  <option value="cuartos-de-final">4tos de Final</option>
+  <option value="semifinales">Semifinales</option>
+  <option value="final">Final</option>
+</select>
+</div>
+    
+
+
+    <div id="ronda-1" class="stage" style="display:none">
 
     <!-- ROW 1 -->
     <div class="wrapper">
@@ -715,20 +729,10 @@
         </div>
       </div>
     </div>
+    </div>
 
 
-
-
-
-
-    <br>
-    <br>
-    <br>
-    <hr style="width:60%; margin: auto; border-top: 1px dashed rgb(165, 165, 165);">
-    <br>
-    <br>
-    <br>
-    <h3 style="text-align: center">Ronda 2</h3>
+    <div id="ronda-2" class="stage" style="display:none">
 
     <!-- ROW 1 -->
     <div class="wrapper">
@@ -1394,20 +1398,11 @@
         </div>
       </div>
     </div>
+    </div>
+  
 
 
-
-
-
-
-    <br>
-    <br>
-    <br>
-    <hr style="width:60%; margin: auto; border-top: 1px dashed rgb(165, 165, 165);">
-    <br>
-    <br>
-    <br>
-    <h3 style="text-align: center">Ronda 3</h3>
+    <div id="ronda-3" class="stage">
 
     <!-- ROW 1 -->
     <div class="wrapper">
@@ -2073,20 +2068,10 @@
         </div>
       </div>
     </div>
+  </div>
+    
 
-
-
-
-
-
-    <br>
-    <br>
-    <br>
-    <hr style="width:60%; margin: auto; border-top: 1px dashed rgb(165, 165, 165);">
-    <br>
-    <br>
-    <br>
-    <h3 style="text-align: center">Octavos de Final</h3>
+    <div id="octavos-de-final" class="stage" style="display:none">
 
     <!-- ROW 1 -->
     <div class="wrapper">
@@ -2431,20 +2416,10 @@
         </div>
       </div>
     </div>
+    </div>
+    
 
-
-
-
-
-
-    <br>
-    <br>
-    <br>
-    <hr style="width:60%; margin: auto; border-top: 1px dashed rgb(165, 165, 165);">
-    <br>
-    <br>
-    <br>
-    <h3 style="text-align: center">Cuartos de Final</h3>
+    <div id="cuartos-de-final" class="stage" style="display:none">
 
     <!-- ROW 9 -->
     <div class="wrapper">
@@ -2617,20 +2592,10 @@
         </div>
       </div>
     </div>
+    </div>
+  
 
-
-
-
-
-
-    <br>
-    <br>
-    <br>
-    <hr style="width:60%; margin: auto; border-top: 1px dashed rgb(165, 165, 165);">
-    <br>
-    <br>
-    <br>
-    <h3 style="text-align: center">Semifinales</h3>
+    <div id="semifinales" class="stage" style="display:none">
 
     <!-- ROW 13 -->
     <div class="wrapper">
@@ -2717,20 +2682,10 @@
         </div>
       </div>
     </div>
+    </div>
+    
 
-
-
-
-
-
-    <br>
-    <br>
-    <br>
-    <hr style="width:60%; margin: auto; border-top: 1px dashed rgb(165, 165, 165);">
-    <br>
-    <br>
-    <br>
-    <h3 style="text-align: center">Final</h3>
+    <div id="final" class="stage" style="display:none">
 
     <!-- ROW 15 -->
     <div class="wrapper">
@@ -2774,6 +2729,8 @@
         </div>
       </div>
     </div>
+    </div>
+    
 
 
 

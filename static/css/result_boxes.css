@@ -129,6 +129,61 @@ td {
   line-height: 1.5;
 }
 
+
+
+
+
+
+
+
+
+
+/* Centrar el select como un título */
+.stage-select-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+/* Select sin flecha, sin bordes, texto centrado */
+.stage-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  background: transparent;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;       /* centra el texto */
+  width: auto;              /* ajusta al contenido */
+  cursor: pointer;
+  outline: none;
+  padding: 0;               /* sin padding extra */
+}
+
+/* Opciones transparentes, sin borde y centradas */
+.stage-select option {
+  background: transparent;
+  border: none;
+  text-align: center;
+  font-size: 1rem;
+  padding: 0.25rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 768px) {
   .wrapper {
     display: flex;
@@ -157,5 +212,12 @@ td {
 
   .result-box {
     width: 100%; /* Make table fill its parent group-box */
+  }
+  .stage-select {
+    font-size: 1.25rem;
+    padding-right: 0.75em;
+  }
+  .stage-select-wrapper::after {
+    font-size: 0.7em;
   }
 }
