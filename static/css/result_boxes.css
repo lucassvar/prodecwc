@@ -151,7 +151,7 @@ td {
 }
 
 .cd-selected {
-  padding: 0.2em 0.5em;
+  padding-bottom: 15px;
   cursor: pointer;
 }
 
@@ -229,5 +229,8 @@ td {
   }
   .stage-select-wrapper::after {
     font-size: 0.7em;
+  }
+  .cd-selected {
+  padding-bottom: 8px;
   }
 }
