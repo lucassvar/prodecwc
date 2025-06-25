@@ -138,36 +138,46 @@ td {
 
 
 
-/* Centrar el select como un título */
-.stage-select-wrapper {
-  display: flex;
-  justify-content: center;
-  margin: 2rem 0;
-}
-
-/* Select sin flecha, sin bordes, texto centrado */
-.stage-select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border: none;
-  background: transparent;
-  font-size: 1.5rem;
+.custom-dropdown {
+  position: relative;        /* sigue sirviendo para el click-outside */
+  width: max-content;
+  margin: 2rem auto;
+  font-family: sans-serif;
   font-weight: bold;
-  text-align: center;       /* centra el texto */
-  width: auto;              /* ajusta al contenido */
-  cursor: pointer;
-  outline: none;
-  padding: 0;               /* sin padding extra */
+  font-size: 1.5rem;
+  user-select: none;
+  /* espacio para separar del contenido que empuja */
+  margin-bottom: 1rem;
 }
 
-/* Opciones transparentes, sin borde y centradas */
-.stage-select option {
-  background: transparent;
-  border: none;
-  text-align: center;
+.cd-selected {
+  padding: 0.2em 0.5em;
+  cursor: pointer;
+}
+
+.cd-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0.2em 0;
+  display: none;
+}
+.cd-options.open {         /* clase que añadiremos en JS al abrir */
+  display: block;
+}
+
+.cd-options li {
+  padding: 0.2em 0.5em;
+  cursor: pointer;
   font-size: 1rem;
-  padding: 0.25rem 0;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+}
+
+.cd-options li:hover {
+  background: rgb(218, 218, 218);
 }
 
 
